@@ -1,6 +1,7 @@
 <mat-form-field>
-    <mat-label>Date</mat-label>
-    <input matInput [matDatepicker]="myPicker" [min]="minDate">
-    <mat-datepicker-toggle matSuffix [for]=" myPicker"></mat-datepicker-toggle>
-    <mat-datepicker #myPicker></mat-datepicker>
+    <input matInput placeholder="Choose a date range" [satDatepicker]="picker" [min]="minDate">
+    <sat-datepicker #picker [rangeMode]="true">
+    </sat-datepicker>
+    <sat-datepicker-toggle matSuffix [for]="picker"></sat-datepicker-toggle>
+
 </mat-form-field>

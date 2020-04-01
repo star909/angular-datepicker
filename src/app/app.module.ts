@@ -10,6 +10,9 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatSelectModule} from '@angular/material/select';
+import { SatDatepickerModule, SatNativeDateModule } from 'saturn-datepicker';
+
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -29,6 +32,8 @@ import { DatepickerComponent } from './modules/datepicker/datepicker.component';
     MatCheckboxModule,
     MatDatepickerModule,
     MatSelectModule,
+    SatDatepickerModule,
+    SatNativeDateModule,
     BrowserAnimationsModule
   ],
   providers: [],
